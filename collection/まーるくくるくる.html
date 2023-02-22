@@ -1,0 +1,28 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+  <script>
+      function setup() {
+        createCanvas(windowWidth, windowHeight);
+
+        strokeWeight(10);   // ふちの太さ
+        stroke(100);        // ふちの色
+        fill(240);          // 塗りの色
+
+        // noFill();           // 塗りなし
+        // noStroke();         // ふちなし
+
+        circle(width / 2, height / 2, 300); // 円
+      }
+
+      function draw() {
+        clear();
+        // マウス座標に円を描く
+        circle(mouseX, mouseY, 50 - (mouseX-mouseY));
+      }
+  </script>
+  <link rel="stylesheet" href="../app.css" />
+</head>
+<body>
+</body>
+</html>

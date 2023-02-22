@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script>
+  <script>
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+
+      circle(width / 2, height / 2, 50); // 円
+    }
+    // 円が上に上昇するアニメーション
+    let minus = 0;
+    function draw() {
+      clear();
+      minus++;
+      circle(width / 2, height / 2 - minus, 50);
+    }
+  </script>
+  <link rel="stylesheet" href="../app.css" />
+</head>
+<body>
+</body>
+</html>

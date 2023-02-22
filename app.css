@@ -1,8 +1,9 @@
-html, body {
+/* ウィンドウを半分にして作成するので、一時的にコメント中 */
+/* html, body {
     margin: 0;
     padding: 0;
-  }
-  body {
-    overflow: hidden;
-    background: #292a33;
-  }
+} */
+body {
+  overflow: hidden;
+  background: #292a33;
+}
